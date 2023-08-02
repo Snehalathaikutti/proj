@@ -1,1 +1,180 @@
-file1.txt
+Introduction to DevOps!!!
+		
+		Software Development LifeCycle!
+		
+		Software --> Application Software 
+						- Desktop Application
+						- Mobile Application
+						- Web Application		-- 
+				 --> System Software 
+						- Chip Level Programming Application
+						- OS Level Programming Application
+						- Middleware Products
+						
+		Software Development LifeCycle! 
+			Web Application --> Statice Web page / blog page
+			
+		SDLC :::
+		
+			Requirement Analysis
+			Design
+			Code/Development 
+			Test 
+			Deployment/Implementaion 
+			monitor/Maintain
+			
+		Waterfall Model (Desktop Application)			--> Linear in fashion.
+		
+		Project-1 
+			Requirement Analysis		--> (6month)
+			Design
+			Code/Development 			--> 3rd month
+			Test 
+			Deployment/Implementaion 
+			monitor/Maintain
+			
+		Project-2			
+			Requirement Analysis		--> (6month)
+			Design
+			Code/Development 			--> 3rd month
+			Test 
+			Deployment/Implementaion 
+			monitor/Maintain
+			
+		Agile Methodologies :::
+		
+		Iterations 1:	(Module)
+			Requirement Analysis
+			Design
+			Code/Development 
+			Test 
+						Deployment/Implementation 
+						monitor/Maintain
+
+		Iterations 2:
+			Requirement Analysis
+			Design
+			Code/Development 
+			Test 
+						Deployment/Implementation 
+						monitor/Maintain
+			
+		Iterations 3:
+			Requirement Analysis
+			Design
+			Code/Development 
+			Test 
+						Deployment/Implementation 
+						monitor/Maintain
+			
+		Using Agile Methodologies we can able to achieve Continuous Delivery. But, NOT Continuous Deployment.	
+		
+		
+		- Continuous Delivery 		
+		- Continuous Deployment
+		
+		
+		DevOps 
+		
+		- Web Application --> E_Commerce Portal
+		
+		Tele-comm Domain
+			Tele-comm Service Provider1 --> 
+			Tele-comm Service Provider2 -->
+			Tele-comm Service Provider3 -->
+			
+		DevOps :: -- Process Perspective ::: 
+		
+		DevOps Engg. :::
+		
+				Build a colaboration between the teams::::
+		
+		SDLC :
+			Teams :::
+			
+				- Business Analyst
+				- Developers
+				- QA - Testing
+				- Operation Team
+				- DBA 
+				- Infra Architects
+				- Release Management Team 
+				- Maintain/Deployment 
+				
+			Technically :
+			
+				- Infra-Structure Management Team 			===> Provision/Create the servers --> IAC Tools(Terraform) 
+				- Application Development Team				===> Coding/Development ==> IDEs --> GIT/Jenkins
+				- Testing Team 								===> Automate Testing Testing - Integration with Notification Tools - Jenkins
+				- Release Management Team					===> Automated Deployment - Ansible/Docker/Kubernetes
+				- Production Support Team / Monitoring Team ===> Monitoring Tools - Prometheus/Grafana/App-Dynamics
+				- Security Team 							===> Static scan/Dynamic Scan security Tool.
+	
+			DevOps Team :::
+			
+				E_Commerce --> Portal ==> Deployed ==> 			
+				
+			Environments :::
+			
+			Non-Prod Environment														Production Environment
+			
+				DEV 		(Developers use this for development)
+				Test 
+					QA 
+					UAT 											====>
+					Pre-Prod/Staging 														Prod Environment
+					
+		
+			DevOps Stages :::
+			
+				Continuous Development				-> Developers --> 
+						Developers --> role of developer? --> coding & unit test.
+						code
+						build 
+						create artifacts 
+						publish the artifacts to artifactory library
+						Unit Testing 
+						promote the code to test environment
+						Notifiy the testing team 
+						
+					Using DevOps process ::::
+						Code --> commit the code to source code repository
+						DevOps will automate rest of the process.
+				
+				Continuous Integration
+						--> allows developers to continuously integrate the code for further testing
+						
+				Continuous Testing 
+						--> Automated testing tools - Continuous Testing
+				
+				Continuous Delivery/Deployment 	==> Used for production Release activities.
+				
+						Continuous Delivery		==> Needs Manual approval for Production Release.
+						Continuous Deployment	==> Automated Deployment to prod - Without any manual Approval.				
+										This can be achieve based on Application Architecture.
+				Continuous Monitoring
+						--> Monitor the Infra-Structure & Application 
+			
+			
+		Application Architecture ::
+			
+				- Monolith Application Architecture
+				
+						Software Application --> composed of various Modules. 
+						These are tightly coupled applications.
+				
+				- Micro-Service Based Application Architecture
+				
+				Applications - are splitted into various services ::
+				
+			amazon.com :: - Web_Application :::
+			
+			- Sign_up			--> Micro-Service (3-tier Application- frontend/Application_logic/backend) -> Independently developed/Tested/Deployed to Prod
+			- Sign-In 
+			- Product Search
+			- Add to cart 
+			- place the order 
+			- payment 
+			- confirm the order 
+			- track the order
+			
