@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('snehalatha123-docker')
+    DOCKERHUB_CREDENTIALS = credentials('snehalatha123-Sneha')
     }
     stages { 
         stage('SCM Checkout') {
@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-                sh 'docker build -t snehalatha123/nodeapp:$BUILD_NUMBER .'
+                sh 'docker build -t snehalatha123/Sneha:$BUILD_NUMBER .'
             }
         }
         stage('login to dockerhub') {
@@ -22,7 +22,7 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'docker push snehalatha123/nodeapp:$BUILD_NUMBER'
+                sh 'docker push snehalatha123/Sneha:$BUILD_NUMBER'
             }
         }
 }
