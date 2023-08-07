@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: ubapache2wp
+  labels:
+  app:ubapache2wp
+spec:
+   containers:
+      - name: ubapache2wp
+        image: snehalatha123/ubapache2wp
+        ports:
+      - container port: 8080
